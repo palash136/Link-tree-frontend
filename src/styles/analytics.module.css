@@ -1,0 +1,192 @@
+
+  .analyticsContainer {
+    display: flex;
+    padding: 127px;
+    margin-left: -127px;
+    border-radius: 10px;
+  }
+  
+  .linkboxes {
+    display: flex;
+    align-items: center;
+    gap: 60px;  /* ✅ Adds spacing between boxes */
+    margin-top: 20px;
+  }
+  
+  .box {
+    padding: 20px;
+    background-color: #DCFFEB;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px auto;
+  }
+  
+  .count {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  
+  .box:active {
+    background-color: #1B5E20; /* Dark green */
+    color: white;
+  }
+  .analyticsContainer {
+    display: flex;
+    flex-direction: column; /* Ensures items are stacked vertically */
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .linkboxes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .box {
+    padding: 20px;
+    background-color: #DCFFEB;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .count {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Graphs Section */
+  .graphsContainer {
+    display: flex;
+    flex-direction: column; /* Ensures graphs appear below the boxes */
+    width: 90%;
+    max-width: 900px;
+    gap: 20px;
+  }
+  
+  .graphGrid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .graph {
+    background: #F9F9F9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Allow scrolling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* ✅ Enables scrolling */
+  }
+  
+  /* Parent container for analytics */
+  .analyticsContainer {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 40px;
+    min-height: 100vh; /* ✅ Ensures it takes full height */
+    overflow-y: auto; /* ✅ Allows scrolling */
+  }
+  
+  /* Box container */
+  .linkboxes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  /* Individual boxes */
+  .box {
+    padding: 20px;
+    background-color: #DCFFEB;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .count {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Click effect */
+  .box:active {
+    background-color: #1B5E20;
+    color: white;
+  }
+  
+  /* Graph container */
+  .graphsContainer {
+    display: flex;
+    flex-direction: column; /* Ensures graphs appear below the boxes */
+    width: 90%;
+    max-width: 900px;
+    gap: 20px;
+  }
+  
+  .graphGrid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .graph {
+    background: #F9F9F9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Make sure the page scrolls */
+  body {
+    overflow-y: auto;
+  }
+  
+ 

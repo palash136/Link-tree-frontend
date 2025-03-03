@@ -1,0 +1,178 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.rightContainer {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    text-align: center;
+}
+
+
+.leftContainer {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.leftContainer {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.topLeftContainer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+
+.sparkText {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.signInContainer {
+    text-align: center;
+}
+
+.signInText {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Container */
+.signInContainer {
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Form styling */
+.signInForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input fields */
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField {
+    padding: 12px;
+    border: 1px solid #ccc;
+    background-color: #E0E2D9;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Forgot password */
+.forgotPassword {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.forgotPassword a {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
+
+.signInButton {
+    padding: 12px;
+    background-color: #E0E2D9;
+    color: #A8AAA2;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.signInButton:hover {
+    background-color: #E0E2D9;
+}
+
+.signUpPrompt {
+    margin-top: 10px;
+}
+
+.signUpPrompt a {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        width: 50%;
+        height: 100vh;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .image {
+        width: 80%;
+        max-height: 500px;
+    }
+}

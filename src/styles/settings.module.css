@@ -1,0 +1,54 @@
+.settingsContainer {
+  width: 70%; /* Increased width */
+  margin: 40px auto; /* Added margin for spacing */
+  background: white;
+  padding: 40px; /* Increased padding for better spacing */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.settingsTitle {
+  font-size: 22px;
+  color: green;
+  border-bottom: 2px solid green;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.settingsForm {
+  margin-top: 25px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.formGroup label {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.formGroup input {
+  padding: 12px; /* Increased input padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px; /* Increased font size */
+}
+
+.saveButton {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 24px; /* Increased button size */
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  float: right;
+}
+
+.saveButton:hover {
+  background-color: #218838;
+}

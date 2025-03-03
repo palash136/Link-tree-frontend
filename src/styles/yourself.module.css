@@ -1,0 +1,164 @@
+/* General styles */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+/* Left Container */
+.leftContainer {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.topLeftContainer {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.sparkText {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Right Container */
+.rightContainer {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Form styles */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 36rem;
+    width: 100%;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    transition: all 0.2s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #059669;
+    box-shadow: 0 0 5px rgba(5, 150, 105, 0.5);
+}
+
+/* Category Selection */
+.categoryLabel {
+    font-weight: 500;
+    color: #111827;
+    margin-bottom: 0.75rem;
+}
+
+.categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+    gap: 1rem; /* Space between items */
+    padding-bottom: 0.5rem;
+}
+
+.categoryButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #E5E7EB;
+    text-align: left;
+    transition: all 0.2s;
+    background: white;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Selected category styling */
+.categoryButton:hover,
+.categoryButton.selected {
+    border-color: #059669;
+    background-color: #ECFDF5;
+    transform: scale(1.05);
+}
+
+.categoryIcon {
+    font-size: 1.25rem;
+}
+
+.categoryText {
+    font-size: 0.875rem;
+}
+
+/* Continue Button */
+.continueButton {
+    width: 100%;
+    background-color: #059669;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: background-color 0.2s, transform 0.2s;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+/* Hover & Disabled States */
+.continueButton:hover {
+    background-color: #047857;
+    transform: scale(1.03);
+}
+
+.continueButton:disabled {
+    background-color: #9CA3AF;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .categoryGrid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .categoryGrid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+
+}
