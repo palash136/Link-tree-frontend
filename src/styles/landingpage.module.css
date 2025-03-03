@@ -1,0 +1,286 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    overflow-x: hidden;
+    width: 100%; 
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #E0E2D9;
+    border-radius: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.logo img {
+    height: 21px;
+}
+
+.marketplace {
+    font-weight: 400;
+    font-size: medium;
+}
+
+.signupBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #28a745;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    max-width: 500px;
+}
+
+.ctaBtn {
+    width: 166px;
+    background-color: #28a745;
+    color: white;
+    padding: 16px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 31px;
+    cursor: pointer;
+}
+
+.ctaBtn:hover {
+    background-color: #218838;
+}
+
+.heroImg {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.heroImg img {
+    width: 100%;
+    max-width: 575px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Analytics Section */
+.analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.analyticsImg {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.analyticsImg img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.analyticsCard {
+    width: 40%;
+    padding: 20px;
+}
+
+.analyticsCard h3 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.analyticsCard p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.contentCard {
+    width: 60%;
+    display: flex;
+    margin-right: -75px;
+    justify-content: flex-end;
+}
+
+.contentText {
+    padding-left: 40px;
+}
+
+.contentCard img {
+    padding-left: 20px;
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 15px;
+    color: #555;
+    max-width: 600px;
+    margin-top: 15px;
+}
+
+/* Review Section */
+.review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewContent {
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.reviewContent h1 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.reviewCard {
+    padding: 20px;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.reviewBtn {
+    cursor: pointer;
+    border: 1px solid green;
+    border-radius: 40px;
+    background-color: white;
+    padding: 10px;
+    color: green;
+}
+
+.reviewSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.testimonial {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.footer {
+    background: #ffffff;
+    padding: 16px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 4px 90px rgba(66, 151, 66, 0.295);
+}
+
+.footerButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 100px;
+    margin-left: 44px;
+}
+
+.loginBtn {
+    background: #e5e5e5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    gap: 173px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+.footerUpper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
